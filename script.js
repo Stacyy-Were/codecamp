@@ -1,4 +1,3 @@
-// --- Cat Facts ---
 const catFacts = [
   "Cats sleep for around 13–16 hours a day.",
   "A group of cats is called a clowder.",
@@ -8,7 +7,7 @@ const catFacts = [
   "A cat can jump up to 6 times its length.",
   "Whiskers help cats detect changes in air currents.",
   "Adult cats only meow at humans, not other cats.",
-  "Ruby loved biting ears—that's a rare cat 'love language'! 🐾"
+  "Ruby loved biting ears and my hair, that's a rare cat 'love language' 🐾"
 ];
 
 function showCatFact() {
@@ -21,7 +20,6 @@ function showCatFact() {
   }, 200);
 }
 
-// --- Theme Toggle ---
 function toggleDarkMode() {
   const body = document.body;
   const btn = document.getElementById("theme-toggle");
@@ -29,7 +27,6 @@ function toggleDarkMode() {
   btn.textContent = body.classList.contains("dark-mode") ? "☀️ Sunny Vibes" : "🌙 Midnight Meow";
 }
 
-// --- Cat Name Generator ---
 function generateCatName() {
   const personality = document.getElementById("cat-personality").value.trim();
   const snack = document.getElementById("cat-snack").value.trim();
@@ -43,7 +40,6 @@ function generateCatName() {
   const titles = ["Sir", "Lady", "Captain", "Professor", "The Honorable", "Duke", "Baroness"];
   const randomTitle = titles[Math.floor(Math.random() * titles.length)];
   
-  // Example: Sir Grumpy Tuna-Slayer
   const finalName = `✨ ${randomTitle} ${personality} ${snack}-Slayer ✨`;
   
   display.style.opacity = 0;
